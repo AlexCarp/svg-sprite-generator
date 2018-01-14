@@ -19,7 +19,7 @@ var svgConfig = {
 };
 
 gulp.task('build:sprite', ['clean'], function () {
-    gulp.src('./*.svg')
+    gulp.src('./src/*.svg')
         .pipe(svgSprite(svgConfig))
         .pipe(rename('sprite.svg'))
         .pipe(gulp.dest('./sprite/'));
